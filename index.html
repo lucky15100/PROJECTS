@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Library System</title>
+</head>
+
+<body>
+  <nav class="sticky">
+    <a href="#books">Books</a>
+    <a href="#register">Register</a>
+  </nav>
+
+  <section id="books">
+    <h2>Books</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Book ID</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Genre</th>
+          <th>Availability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>
+            <table class="nested-table">
+              <link rel="Book" href="edfu">
+              <tr>
+                <a href=>BOOK title 1</a>
+                <td>Publication Date: 2000</td>
+              </tr>
+              <tr>
+                <td>Page Count: 250</td>
+              </tr>
+              <tr>
+                <td>ISBN:123-4567890123</td>
+              </tr>
+            </table>
+          </td>
+          <td>Author Name 1</td>
+          <td>Genre 1</td>
+          <td>Available</td>
+        </tr>
+        <td>2</td>
+          <td>
+            <table class="nested-table">
+              <tr>
+                <a href=>BOOK title 2</a>
+
+                <td>Publication Date: 2005</td>
+              </tr>
+              <tr>
+                <td>Page Count: 300</td>
+              </tr>
+              <tr>
+                <td>ISBN:123-4567890456</td>
+              </tr>
+            </table>
+          </td>
+          <td>Author Name 2</td>
+          <td>Genre 2</td>
+          <td>Not Available</td>
+        </tr><td>3</td>
+        <td>
+          <table class="nested-table">
+            <a href=>BOOK title 3</a>
+            <tr>
+              <td>Publication Date: 2010</td>
+            </tr>
+            <tr>
+              <td>Page Count: 350</td>
+            </tr>
+            <tr>
+              <td>ISBN:123-4567890789</td>
+            </tr>
+          </table>
+        </td>
+        <td>Author Name 3</td>
+        <td>Genre 3</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>
+          <table class="nested-table">
+            <a href=>BOOK TITLE 4</a>
+            <tr>
+              <td>Publication Date: 3500</td>
+            </tr>
+            <tr>
+              <td>Page Count: 540</td>
+            </tr>
+            <tr>
+              <td>ISBN:123-4567890546465</td>
+            </tr>
+          </table>
+        </td>
+        <td>Author Name 4</td>
+        <td>Genre 4</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>
+          <table class="nested-table">
+            <a href=>BOOK TITLE 5</a>
+
+            <tr>
+              <td>Publication Date: 3200</td>
+            </tr>
+            <tr>
+              <td>Page Count: 390</td>
+            </tr>
+            <tr>
+              <td>ISBN:123-45678901545</td>
+            </tr>
+          </table>
+        </td>
+        <td>Author Name 5</td>
+        <td>Genre 5</td>
+        <td>Available</td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="register">
+    <h2>Register</h2>
+    <form>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="5" max="100" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+      <button type="submit">Register</button>
+    </form>
+  </section>
+</body>
+
+</html>
